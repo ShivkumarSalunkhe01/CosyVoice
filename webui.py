@@ -55,7 +55,6 @@ def generate_audio(tts_text, mode_checkbox_group, sft_dropdown, prompt_text, pro
         prompt_wav = prompt_wav_record
     else:
         prompt_wav = None
-    # if instruct mode, please make sure that model is iic/CosyVoice-300M-Instruct and not cross_lingual mode
     if mode_checkbox_group in ['Natural Language Control']:
         if instruct_text == '':
             gr.Warning('You are using Natural Language Control mode, please enter instruction text')
